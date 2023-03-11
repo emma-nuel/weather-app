@@ -8,7 +8,7 @@
         <div class="card-body">
             <h5 class="card-title">Temperature(℃)</h5>
             <h5 class="card-title" id="celsius">{{temperature_in_celsius | floatformat:2}}</h5>
-            <a href="#" class="btn btn-primary">View Live Data</a>
+            <a href="{% url 'draw_celsius_chart' %}" class="btn btn-primary" value="celsius">View Live Data</a>
         </div>
     </div>
 
@@ -21,7 +21,7 @@
         <div class="card-body">
             <h5 class="card-title">Temperature(℉)</h5>
             <h5 class="card-title" id="farenheit">{{temperature_in_farenheit | floatformat:2}}</h5>
-            <a href="#" class="btn btn-primary">View Live Data</a>
+            <a href="{% url 'draw_farenheit_chart' %}" class="btn btn-primary">View Live Data</a>
         </div>
     </div>
     
@@ -34,7 +34,7 @@
         <div class="card-body">
             <h5 class="card-title">Humidity</h5>
             <h5 class="card-title" id="humidity">{{humidity | floatformat:2}}</h5>
-            <a href="#" class="btn btn-primary">View Live Data</a>
+            <a href="{% url 'draw_humidity_chart' %}" class="btn btn-primary">View Live Data</a>
         </div>
     </div>
 
@@ -47,7 +47,7 @@
         <div class="card-body">
             <h5 class="card-title">Heat Index</h5>
             <h5 class="card-title" id="heatindex">{{heatindex | floatformat:2}}</h5>
-            <a href="#" class="btn btn-primary">View Live Data</a>
+            <a href="{% url 'draw_heatindex_chart' %}" class="btn btn-primary">View Live Data</a>
         </div>
     </div>
 </div>
