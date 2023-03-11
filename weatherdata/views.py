@@ -104,10 +104,10 @@ def draw_humidity_chart(request):
     fig = px.line(
         x = dates,
         y = humidity,
-        title='Temperature in ℉',
+        title='Humidity',
         labels={
             'x': 'Date', 
-            'y': 'Temperatures',
+            'y': 'Humidity',
         }
     )
 
@@ -138,7 +138,7 @@ def draw_heatindex_chart(request):
         title='Heat Index',
         labels={
             'x': 'Date', 
-            'y': 'Temperatures',
+            'y': 'Heat Index',
         }
     )
 
