@@ -53,6 +53,6 @@ openapi_schema_urlpatterns = [
     ), name='openapi-schema')
 ]
 
-urlpatterns += htmx_urlpatterns
+# urlpatterns += htmx_urlpatterns
 urlpatterns += restapi_urlpatterns
 urlpatterns += openapi_schema_urlpatterns
