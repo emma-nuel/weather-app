@@ -27,11 +27,12 @@ urlpatterns = [
     path('draw-farenheit-chart/', draw_farenheit_chart, name='draw_farenheit_chart'),
     path('draw-humidity-chart/', draw_humidity_chart, name='draw_humidity_chart'),
     path('draw-heatindex-chart/', draw_heatindex_chart, name='draw_heatindex_chart'),
+    path('line/', line_chart, name="linechart"),
 ]
 
-htmx_urlpatterns = [
-    path('update-homepage/', update_homepage, name='update-homepage'),
-]
+# htmx_urlpatterns = [
+#     path('update-homepage/', update_homepage, name='update-homepage'),
+# ]
 
 restapi_urlpatterns = [
     path(r'logs/', weatherdataview.as_view(), name='logs'),

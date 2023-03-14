@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic', 
     'rest_framework',
     'weatherdata',
+    "django_htmx",
 ]
 
 MIDDLEWARE = [
@@ -51,6 +52,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    "django_htmx.middleware.HtmxMiddleware",
+
 ]
 
 ROOT_URLCONF = 'WeatherApp.urls'
